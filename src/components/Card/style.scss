@@ -1,0 +1,38 @@
+.custom-card{
+    margin-top: 24px;
+    display: flex;
+    font-size: 13px;
+    height: 10rem;
+    margin-bottom: 24px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .icon{
+        width: 54px;
+        height: 54px;
+        font-size: 54px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        .title{
+            font-size: 16px;
+            margin-bottom: 8px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+
+        }
+        .number{
+            line-height: 32px;
+            font-size: 24px;
+            height: 32px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            text-align: center;
+        }
+    }
+    
+}

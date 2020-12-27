@@ -1,0 +1,14 @@
+export const OPEN_FORM = 'OPEN_FORM';
+export const EDIT_STATUS = 'EDIT_STATUS';
+export const SEARCH_NAME = 'SEARCH_NAME';
+export const GET_ALL_USER = 'GET_ALL_USER';
+export const SHOW_ALL_USER = 'SHOW_ALL_USER';
+export const ADD_USER_SUSSESS = 'ADD_USER_SUSSESS';
+export const DELETE_USER = 'DELETE_USER';
+export const DELETE_USER_SUSSESS = 'DELETE_USER_SUSSESS';
+export const EDIT_USER_SUSSESS = 'EDIT_USER_SUSSESS';
+export const EDIT_STATUS_SUSSESS = 'EDIT_STATUS_SUSSESS';
+export const WHEN_HAS_ERROR = 'WHEN_HAS_ERROR';
+
+
+

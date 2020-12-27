@@ -1,0 +1,39 @@
+.custom-sider{
+    background-color: #fff;
+    .custom-logo{
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        .img-logo{
+            width: 36px;
+            margin-right: 8px;
+
+        }
+        .name{
+            
+            vertical-align: text-bottom;
+            font-size: 16px;
+            text-transform: uppercase;
+            display: inline-block;
+            font-weight: 700;
+            color: #1890ff;
+            white-space: nowrap;
+            margin-bottom: 0;
+        }
+        .uname{
+            display: none;
+        }
+            
+    
+    }
+    .ant-menu-item{
+        text-align: left;
+        & span{
+            font-size: 16px;
+
+        }
+    }
+
+}

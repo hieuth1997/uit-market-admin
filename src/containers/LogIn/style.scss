@@ -1,0 +1,193 @@
+
+$mobile-width: 480px; 
+$tablet-width: 768px; 
+$desktop-width: 1024px;  
+
+@mixin mobile { @media (max-width: #{$mobile-width - 1px}) {     
+  @content;   
+ } 
+}  
+
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {       
+   @content;   
+ } 
+}  
+
+@mixin desktop {   @media (min-width: #{$desktop-width}) {     
+  @content;  
+ } 
+}
+.login-form{
+    font-family: 'Roboto', sans-serif;
+    & .loading{
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    & .invalid{
+        margin-bottom: 10px;
+        padding: 5px 0 5px 30px;
+        color: red;
+        line-height: 1.2;
+        font-size: 15px;
+
+    }
+    & .valid{
+        display: none;
+    }
+    & .login100-form-title{
+        font-family: Poppins-Bold;
+        font-size: 24px;
+        color: #333;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+        width: 100%;
+        display: block;
+        padding-bottom: 2rem;
+      
+    
+    }
+    & .validate-input{
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        margin-bottom: 10px;
+        & .input100{
+            font-family: Poppins-Medium;
+            
+            font-size: 15px;
+            line-height: 1.5;
+            color: #666;
+            display: block;
+            width: 100%;
+            background: #e6e6e6;
+            height: 50px;
+            border-radius: 25px;
+            padding: 0 30px 0 68px;
+            outline: none;
+            border: none;
+           &:focus{
+              & ~ .symbol-input100{
+                    color: #57b846;
+               }
+           }
+
+        }
+       
+
+        .symbol-input100{
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            border-radius: 25px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding-left: 35px;
+            pointer-events: none;
+            color: #666;
+        }
+     }
+     .contain-btn{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .btn-login{
+                    font-family: Montserrat-Bold;
+                    font-size: 15px;
+                    line-height: 1.5;
+                    color: #fff;
+                    text-transform: uppercase;
+                    width: 100%;
+                    height: 50px;
+                    border-radius: 25px;
+                    background: #57b846;
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 25px;
+                    -webkit-transition: all .4s;
+                    -o-transition: all .4s;
+                    -moz-transition: all .4s;
+                    transition: all .4s;
+                    outline: none!important;
+                     border: none;
+                     &:hover{
+                        background: #333;
+                     }
+                }
+              
+     }
+     & .cutom-span{
+        cursor: pointer;
+        color: #333;
+        text-decoration: none;
+        &:hover{
+            color: #57b846;
+
+        }
+    }
+    & .p-t-16{
+        padding-top: 117px;
+    }
+   
+}
+
+
+.container-login{
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: linear-gradient(-135deg,#c850c0,#4158d0);
+    .custom-form{
+        margin: 1rem;
+        display: flex;
+        width: 960px;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 177px 130px 95px 95px;
+        @include mobile{
+            padding:  20px 10px 20px 40px;
+            display: flex;
+
+        }
+        @include tablet{
+            padding-right: 130px ;
+              padding-left: 200px ;
+        }
+       
+
+        }
+}
+@include mobile {
+    .remove-img{
+        display: none;
+    }
+}
+@include tablet {
+    .remove-img{
+        display: none;
+        
+    }
+}
+
